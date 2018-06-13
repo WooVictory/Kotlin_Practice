@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SeekBar.SeekBarActivity">
+        <activity android:name=".VideoView.VideoActivity"
+            android:screenOrientation="landscape"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +26,8 @@
         <activity android:name=".ViewPager.Main4Activity" />
         <activity android:name=".Progress.Main6Activity" />
         <activity android:name=".Spinner.Main5Activity" />
-        <activity android:name=".Scrollview.Main7Activity"></activity>
+        <activity android:name=".Scrollview.Main7Activity" />
+        <activity android:name=".SeekBar.SeekBarActivity"></activity>
     </application>
 
 </manifest>
