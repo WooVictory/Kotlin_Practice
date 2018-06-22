@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Spinner.Main5Activity">
+    tools:context=".Spinner.SpinnerActivity">
 
     <Spinner
         android:id="@+id/spinner_city"

@@ -3,6 +3,8 @@
     package="woo.sopt22.kotlinexam">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!--셀룰러나 와이파이로 위치 측정 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!--GPS로 위치 측정-->
 
     <application
         android:allowBackup="true"
@@ -11,9 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoView.VideoActivity"
-            android:screenOrientation="landscape"
-            >
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,12 +22,22 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Recyclerview2.Main3Activity" />
-        <activity android:name=".ViewPager.Main4Activity" />
-        <activity android:name=".Progress.Main6Activity" />
-        <activity android:name=".Spinner.Main5Activity" />
-        <activity android:name=".Scrollview.Main7Activity" />
-        <activity android:name=".SeekBar.SeekBarActivity"></activity>
+        <activity android:name=".Recyclerview2.RecyclerViewActivity" />
+        <activity android:name=".ViewPager.ViewPagerActivity" />
+        <activity android:name=".Progress.ProgressActivity" />
+        <activity android:name=".Spinner.SpinnerActivity" />
+        <activity android:name=".Scrollview.ScrollActivity" />
+        <activity android:name=".SeekBar.SeekBarActivity" />
+        <activity android:name=".VideoView.VideoActivity" />
+        <activity android:name=".Dialog.DialogActivity" />
+        <activity android:name=".SurfaceView.SurfaceViewActivity" />
+        <activity android:name=".Picker.DateTimePickerActivity" />
+        <activity android:name=".WebView.WebViewActivity" />
+        <activity android:name=".GoogleMap.GoogleMapActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDk_eINabNebdfWaQpUMuUWmBdNLyuAayc"/>
     </application>
 
 </manifest>
