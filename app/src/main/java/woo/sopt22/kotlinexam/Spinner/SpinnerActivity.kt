@@ -10,7 +10,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main5.*
 import woo.sopt22.kotlinexam.R
 
-class Main5Activity : AppCompatActivity() {
+class SpinnerActivity : AppCompatActivity() {
 
     var countries = arrayOf("한국", "미국")
     var cities = arrayOf("서울","대전","부산")
@@ -34,12 +34,12 @@ class Main5Activity : AppCompatActivity() {
                 Log.v("11",country.toString())
                 when(country){
                     "한국"->{
-                        var adpater = ArrayAdapter<String>(this@Main5Activity, android.R.layout.simple_spinner_dropdown_item,cities)
+                        var adpater = ArrayAdapter<String>(this@SpinnerActivity, android.R.layout.simple_spinner_dropdown_item,cities)
                         // 주의할 점!! 리스너 안에서 this(context)를 넣어줄 경우에는 해당 액티비티임을 표시해주기 위해서 @ 사용
                         spinner_city.adapter = adpater
                     }
                     "미국"->{
-                        var adpater = ArrayAdapter<String>(this@Main5Activity, android.R.layout.simple_spinner_dropdown_item,city_usa)
+                        var adpater = ArrayAdapter<String>(this@SpinnerActivity, android.R.layout.simple_spinner_dropdown_item,city_usa)
                         spinner_city.adapter = adpater
                     }
                 }
@@ -53,7 +53,7 @@ class Main5Activity : AppCompatActivity() {
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 var country = parent!!.getItemAtPosition(position).toString() // 스피너 중에서 어떤 나라를 선택헀는지 알 수 있다.
-                Toast.makeText(this@Main5Activity, country, Toast.LENGTH_LONG).show()
+                Toast.makeText(this@SpinnerActivity, country, Toast.LENGTH_LONG).show()
             }
 
         }
