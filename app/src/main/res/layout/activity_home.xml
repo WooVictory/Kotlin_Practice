@@ -31,18 +31,22 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/dialogBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dialog"/>
                 <Button
+                    android:id="@+id/progressBarBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Progress"/>
                 <Button
+                    android:id="@+id/reyclerBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="recycler"/>
                 <Button
+                    android:id="@+id/scrollBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="scroll"/>
@@ -86,19 +90,16 @@
                     android:id="@+id/intentBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Picker"/>
+                    android:text="intent"/>
                 <Button
+                    android:id="@+id/requestPermissionBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Web"/>
+                    android:text="requestPermission"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="map"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LifeCycele"/>
 
             </LinearLayout>
 

@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 import woo.sopt22.kotlinexam.GoogleMap.GoogleMapActivity
 import woo.sopt22.kotlinexam.Intent.IntentActivity
 import woo.sopt22.kotlinexam.Picker.DateTimePickerActivity
+import woo.sopt22.kotlinexam.RequestPermission.RequsetPermissionActivity
 import woo.sopt22.kotlinexam.WebView.WebViewActivity
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
@@ -25,6 +26,9 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             intentBtn->{
                 startActivity(Intent(applicationContext, IntentActivity::class.java))
             }
+            requestPermissionBtn->{
+                startActivity(Intent(applicationContext, RequsetPermissionActivity::class.java))
+            }
         }
     }
 
@@ -36,5 +40,6 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         webViewBtn.setOnClickListener(this)
         mapBtn.setOnClickListener(this)
         intentBtn.setOnClickListener(this)
+        requestPermissionBtn.setOnClickListener(this)
     }
 }
