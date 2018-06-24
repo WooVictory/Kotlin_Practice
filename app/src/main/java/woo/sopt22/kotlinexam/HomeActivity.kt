@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_home.*
 import woo.sopt22.kotlinexam.GoogleMap.GoogleMapActivity
+import woo.sopt22.kotlinexam.Intent.IntentActivity
 import woo.sopt22.kotlinexam.Picker.DateTimePickerActivity
 import woo.sopt22.kotlinexam.WebView.WebViewActivity
 
@@ -21,6 +22,9 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             mapBtn->{
                 startActivity(Intent(applicationContext, GoogleMapActivity::class.java))
             }
+            intentBtn->{
+                startActivity(Intent(applicationContext, IntentActivity::class.java))
+            }
         }
     }
 
@@ -31,5 +35,6 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         pickerBtn.setOnClickListener(this)
         webViewBtn.setOnClickListener(this)
         mapBtn.setOnClickListener(this)
+        intentBtn.setOnClickListener(this)
     }
 }

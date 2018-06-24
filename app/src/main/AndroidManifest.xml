@@ -3,9 +3,10 @@
     package="woo.sopt22.kotlinexam">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!--셀룰러나 와이파이로 위치 측정 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!--GPS로 위치 측정-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 셀룰러나 와이파이로 위치 측정 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <!-- GPS로 위치 측정 -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -33,11 +34,15 @@
         <activity android:name=".SurfaceView.SurfaceViewActivity" />
         <activity android:name=".Picker.DateTimePickerActivity" />
         <activity android:name=".WebView.WebViewActivity" />
-        <activity android:name=".GoogleMap.GoogleMapActivity"></activity>
+        <activity android:name=".GoogleMap.GoogleMapActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDk_eINabNebdfWaQpUMuUWmBdNLyuAayc"/>
+            android:value="AIzaSyDk_eINabNebdfWaQpUMuUWmBdNLyuAayc" />
+
+        <activity android:name=".LifeCycle.LifeCycleActivity" />
+        <activity android:name=".Intent.IntentActivity" />
+        <activity android:name=".Intent.BActivity"></activity>
     </application>
 
 </manifest>

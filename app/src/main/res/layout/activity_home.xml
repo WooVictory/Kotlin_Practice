@@ -70,11 +70,38 @@
                     android:layout_height="wrap_content"
                     android:text="map"/>
                 <Button
+                    android:id="@+id/lifeCycle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="scroll"/>
+                    android:text="LifeCycele"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/intentBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Picker"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="map"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LifeCycele"/>
+
+            </LinearLayout>
+
 
 
         </LinearLayout>
