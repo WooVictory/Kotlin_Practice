@@ -97,12 +97,33 @@
                     android:layout_height="wrap_content"
                     android:text="requestPermission"/>
                 <Button
+                    android:id="@+id/fragmentBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="map"/>
+                    android:text="fragment"/>
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/fragmentLifeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fragment Life"/>
+                <Button
+                    android:id="@+id/snackBarToastBarBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="snack toast"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fragment"/>
+
+            </LinearLayout>
 
 
         </LinearLayout>

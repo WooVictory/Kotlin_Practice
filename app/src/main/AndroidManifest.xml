@@ -53,7 +53,12 @@
         <activity android:name=".LifeCycle.LifeCycleActivity" />
         <activity android:name=".Intent.IntentActivity" />
         <activity android:name=".Intent.BActivity" />
-        <activity android:name=".RequestPermission.RequsetPermissionActivity"></activity>
+        <activity android:name=".RequestPermission.RequsetPermissionActivity" />
+        <activity android:name=".Fragment.FragmentActivity" />
+        <activity android:name=".Fragment.SecondActivity" />
+        <activity android:name=".Fragment.FragmentLifeCycleActivity" />
+        <activity android:name=".SnackBarToast.SnackToastActivity" />
+        <activity android:name=".Context.ContextActivity"></activity>
     </application>
 
 </manifest>

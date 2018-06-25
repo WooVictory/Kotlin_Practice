@@ -5,10 +5,14 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_home.*
+import woo.sopt22.kotlinexam.Dialog.DialogActivity
+import woo.sopt22.kotlinexam.Fragment.FragmentActivity
+import woo.sopt22.kotlinexam.Fragment.FragmentLifeCycleActivity
 import woo.sopt22.kotlinexam.GoogleMap.GoogleMapActivity
 import woo.sopt22.kotlinexam.Intent.IntentActivity
 import woo.sopt22.kotlinexam.Picker.DateTimePickerActivity
 import woo.sopt22.kotlinexam.RequestPermission.RequsetPermissionActivity
+import woo.sopt22.kotlinexam.SnackBarToast.SnackToastActivity
 import woo.sopt22.kotlinexam.WebView.WebViewActivity
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
@@ -29,6 +33,18 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             requestPermissionBtn->{
                 startActivity(Intent(applicationContext, RequsetPermissionActivity::class.java))
             }
+            fragmentBtn->{
+                startActivity(Intent(applicationContext, FragmentActivity::class.java))
+            }
+            dialogBtn->{
+                startActivity(Intent(applicationContext, DialogActivity::class.java))
+            }
+            fragmentLifeBtn->{
+                startActivity(Intent(applicationContext, FragmentLifeCycleActivity::class.java))
+            }
+            snackBarToastBarBtn->{
+                startActivity(Intent(applicationContext, SnackToastActivity::class.java))
+            }
         }
     }
 
@@ -41,5 +57,9 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         mapBtn.setOnClickListener(this)
         intentBtn.setOnClickListener(this)
         requestPermissionBtn.setOnClickListener(this)
+        fragmentBtn.setOnClickListener(this)
+        dialogBtn.setOnClickListener(this)
+        fragmentLifeBtn.setOnClickListener(this)
+        snackBarToastBarBtn.setOnClickListener(this)
     }
 }
