@@ -119,9 +119,56 @@
                     android:layout_height="wrap_content"
                     android:text="snack toast"/>
                 <Button
+                    android:id="@+id/sharedPreferenceBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="fragment"/>
+                    android:text="shared"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/handlerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="handler"/>
+                <Button
+                    android:id="@+id/asyncBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asynctask"/>
+                <Button
+                    android:id="@+id/tokenBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="token"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/serviceBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="service"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asynctask"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="token"/>
 
             </LinearLayout>
 

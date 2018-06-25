@@ -58,7 +58,18 @@
         <activity android:name=".Fragment.SecondActivity" />
         <activity android:name=".Fragment.FragmentLifeCycleActivity" />
         <activity android:name=".SnackBarToast.SnackToastActivity" />
-        <activity android:name=".Context.ContextActivity"></activity>
+        <activity android:name=".Context.ContextActivity" />
+        <activity android:name=".SharedPreference.SharedPreferenceActivity" />
+        <activity android:name=".Handler.HandlerActivity" />
+        <activity android:name=".Async.AsyncTaskActivity" />
+        <activity android:name=".FCM.FCMActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_Cloud Messaging_icon"
+            android:resource="@drawable/ic_launcher_background" />
+
+        <activity android:name=".Service.ServiceActivity"></activity>
+        <service android:name=".Service.MyServiece"/>
     </application>
 
 </manifest>
