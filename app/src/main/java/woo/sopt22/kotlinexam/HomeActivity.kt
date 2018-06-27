@@ -16,6 +16,7 @@ import woo.sopt22.kotlinexam.Intent.IntentActivity
 import woo.sopt22.kotlinexam.Picker.DateTimePickerActivity
 import woo.sopt22.kotlinexam.RequestPermission.RequsetPermissionActivity
 import woo.sopt22.kotlinexam.Service.ServiceActivity
+import woo.sopt22.kotlinexam.ServiceBind.ServiceBindActivity
 import woo.sopt22.kotlinexam.SharedPreference.SharedPreferenceActivity
 import woo.sopt22.kotlinexam.SnackBarToast.SnackToastActivity
 import woo.sopt22.kotlinexam.WebView.WebViewActivity
@@ -65,6 +66,10 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             serviceBtn->{
                 startActivity(Intent(applicationContext, ServiceActivity::class.java))
             }
+            serviceBindBtn->{
+                startActivity(Intent(applicationContext, ServiceBindActivity::class.java))
+            }
+
         }
     }
 
@@ -86,5 +91,6 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         asyncBtn.setOnClickListener(this)
         tokenBtn.setOnClickListener(this)
         serviceBtn.setOnClickListener(this)
+        serviceBindBtn.setOnClickListener(this)
     }
 }

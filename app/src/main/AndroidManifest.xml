@@ -68,8 +68,13 @@
             android:name="com.google.firebase.messaging.default_Cloud Messaging_icon"
             android:resource="@drawable/ic_launcher_background" />
 
-        <activity android:name=".Service.ServiceActivity"></activity>
-        <service android:name=".Service.MyServiece"/>
+        <activity android:name=".Service.ServiceActivity" />
+
+        <service android:name=".Service.MyServiece" />
+        <service android:name=".ServiceBind.MyService"/>
+
+        <activity android:name=".ServiceBind.ServiceBindActivity"></activity>
+
     </application>
 
 </manifest>

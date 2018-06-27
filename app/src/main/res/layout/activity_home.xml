@@ -162,9 +162,10 @@
                     android:layout_height="wrap_content"
                     android:text="service"/>
                 <Button
+                    android:id="@+id/serviceBindBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="asynctask"/>
+                    android:text="servicebind"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
